@@ -14,11 +14,11 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-    if (msg.body == "oi") {
+    if (msg.body == "Oi") {
 
-        msg.reply("Oi, não é o Thiago que esta respondendo... Sim um BOT\n" +
+        msg.reply("Oi, não é o Thiago que esta respondendo… Sim um BOT!\n" +
             "\nO Thiago me ensinou fazer umas coisas muito legais como:\n" +
-            "\nDigite !oisumido é irei te mandar uma mensagem super fofinha" +
+            "\nDigite !oisumido é irei te mandar uma mensagem super fofinha." +
             "\nMas se você for minha mãe basta digitar !uploc que irei te enviar minha localização\n" +
             "\nOu se quiser ver a lista de comandos completos basta digitar\n" +
             "\n!comandos");
@@ -34,7 +34,7 @@ client.on('message', msg => {
             "\nDigite: !callex se você for um ex meu, para ver uma coisa 😡\n" +
             "\nDigite: !callthi caso você queria falar com o Thiago verdadeiro 😭\n" +
             "\nDigite: !tindermax pra saber quantos matchs o Thiago já deu no Tinder 😏\n" +
-            "\nDigite: !curriculo para ganhar uma copia do meu curriculo 😍\n" +
+            "\nDigite: !curriculo para ganhar uma cópia do meu currículo. 😍\n" +
             "\nDigite: !jogos para jogar algo");
     } else if (msg.body == "!oisumido") {
 
@@ -43,10 +43,10 @@ client.on('message', msg => {
     } else if (msg.body == "!segredo") {
 
         const secret = ["O Thiago já levou chifre 🐮",
-            "O Thiago não bebe bebidas alcoolicas exceto Cerveja 🍺",
+            "O Thiago não bebe bebidas alcoólicas exceto Cerveja! 🍺",
             "O Thiago nunca deu PT",
             "O Thiago ama cozinhar",
-            "O Thiago já namorou secretamente",
+            "O Thiago já namorou secretamente.",
             "O Thiago perdeu seu BV com 16 anos 😘",
             "O Thiago perdeu seu BV com uma pessoa do seu bairro 😷"
         ];
@@ -72,25 +72,25 @@ client.on('message', msg => {
             )
             .catch(
                 (error) => {
-                    msg.reply("EITA! Não consegui enviar meu curriculo 😭\n" +
+                    msg.reply("EITA! Não consegui enviar meu currículo 😭\n" +
                         "\nMas já vou avisar o Thiago sobre isso 😍");
                     console.log(error);
                 }
             )
 
-    } else if(msg.body == "!jogos") {
+    } else if (msg.body == "!jogos") {
         msg.reply("Então vamos jogar\n" +
             "\nAdivinhe o animal:\n" +
-            "\nSerá que você consegue advinhar o animal em que eu estou pensando em só 3 tentativas?\n" +
-            "Para saber como jogar Advinhe o Animal, digite: !help game1\n" +
+            "\nSerá que você consegue, advinha o animal em que estou pensando em só 3 tentativas?\n" +
+            "\nPara saber como jogar Adivinhe o Animal, digite: !help game1\n" +
             "\nPedra Papel Tesoura (ppt):\n" +
-            "\nNesse classico vou tentar te derrotar no Pedra Papel tesoura\n" +
+            "\nNesse clássico vou tentar te derrotar no Pedra Papel tesoura.\n" +
             "\nPara saber como jogar Pedra Papel Tesoura, digite: !help game2");
-    }
-    else {
+    } else {
 
         msg.reply("Tente digitar: !comandos")
 
+        // POSSÍVEL I.A feita em Python
         // axios.post('http://127.0.0.1:5000/getresponse/', {
         //     msg_analytic: msg.body
         // }).then(function (response) {
