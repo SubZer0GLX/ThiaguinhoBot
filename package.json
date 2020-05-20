@@ -4,6 +4,7 @@
   "description": "Um bot meu",
   "main": "index.js",
   "scripts": {
+    “start”: “node index.js”,
     "test": "thiaguinho"
   },
   "author": "thethiago27",
